@@ -13,6 +13,7 @@ class State(BaseModel, Base):
         __tablename__: table name
         name: input name
         cities: relation to cities table
+        Representation of state
     """
     __tablename__ = "states"
     name = Column(String(128), nullable=False)

@@ -11,6 +11,7 @@ class Review(BaseModel, Base):
         place_id: place id
         user_id: user id
         text: review description
+        Representation of review
     """
     __tablename__ = "reviews"
     text = Column(String(1024), nullable=False)
