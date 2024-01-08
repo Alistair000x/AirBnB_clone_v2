@@ -28,7 +28,6 @@ class Place(BaseModel, Base):
         latitude: latitude in flaot
         longitude: longitude in float
         amenity_ids: list of Amenity ids
-        Representation:
     """
     __tablename__ = "places"
     city_id = Column(String(60), ForeignKey('cities.id'), nullable=False)
